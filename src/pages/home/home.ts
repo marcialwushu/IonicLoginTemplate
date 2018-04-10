@@ -13,6 +13,7 @@ export class HomePage {
   }
 
   logout(){
+    //Api Token Logout
     const root = this.app.getRootNav();
     root.popToRoot();
   }
