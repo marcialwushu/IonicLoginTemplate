@@ -1,31 +1,32 @@
-
-
-
-<ion-content padding>
-  <ion-list>
+<ion-content padding class="background">
   
-    <ion-item>
-      <ion-label fixed>Name</ion-label>
-      <ion-input type="text" value=""></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label fixed>Email</ion-label>
-      <ion-input type="text" value=""></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label fixed>Usename</ion-label>
-      <ion-input type="text" value=""></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label fixed>Password</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
-  
-    <button ion-button block color="primary" (click)="signup()">Signup</button>
-  
-  </ion-list>
-  </ion-content>
-  
+  <ion-card>
+    <ion-card-header>
+      Signup
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-line>
+        <ion-item>
+          
+          <ion-input type="text" placeholder="Name"></ion-input>
+        </ion-item>
+        <ion-item>
+          
+          <ion-input type="text" placeholder="Email"></ion-input>
+        </ion-item>
+        <ion-item>
+          
+          <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+        
+      </ion-list>
+      <a>Forgot your login detail? <b>Get help signing in</b></a>
+      <button ion-button block outline color="primary" (click)="signup()">Signup</button>
+      <p>OR</p>
+      <button ion-button block color="facebook">
+        <ion-icon name="logo-facebook" ></ion-icon> Login with facebook
+      </button>
+    </ion-card-content>
+  </ion-card>
+  <button ion-button clear full color="light">You have an account? Signing</button>
+</ion-content>
