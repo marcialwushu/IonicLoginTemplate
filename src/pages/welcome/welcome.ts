@@ -26,11 +26,11 @@ export class WelcomePage {
   }
 
   signup(){
-
+    this.navCtrl.push(SignupPage);
   }
 
   login(){
-
+    this.navCtrl.push(LoginPage);
   }
 
 }
