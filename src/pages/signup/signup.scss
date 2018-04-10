@@ -16,7 +16,7 @@ page-signup {
     }
     a,p,
     ion-card-header.card-header{
-        color: #fff;
+        color: #fff!important;
     }
 
     .list > .item-block:first-child{
@@ -46,5 +46,13 @@ page-signup {
         input::-moz-placeholder{
             color: #fff!important;
         }
+    }
+
+    .icon{
+        padding-right: 10px;
+    }
+    .bottom{
+        position: absolute;
+        bottom: 0;
     }
 }
